@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu te amo!</title>
+    <link rel="shortcut icon" type="image/jpg" href="./rose.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./flipdown.css">
+    <script src="./flipdown.js"></script>
+</head>
+<body>
+    <!-- The video -->
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="./love.mp4" type="video/mp4">
+    </video> -->
+    <div class="content">
+        <div id="header">
+            <h2>Amor de minha vida!</h2>
+            <h1>&#128143 Ate daqui a pouco &#128517❤️</h1>
+        </div>
+        <div id="clock">
+            <div id="flipdown" class="flipdown"></div>
+        </div>
+        <div id="player">
+            <!-- <audio id="audio" src="./06 All of Me.m4a" controls autoplay></audio> -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7cpCU3Denug5NGZsSpQl8v?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div> 
+    </div>
+    
+    
+    
+    <script>
+        var flipdown = new FlipDown(1646087400);
+        flipdown.start();
+        flipdown.ifEnded(() => {
+            console.log('The countdown has ended!');
+        });
+        // var flipdown = new FlipDown(datetime, el, {
+        //     theme: 'light' // or dark
+        // });
+    </script>
+</body>
+</html>
